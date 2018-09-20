@@ -1,7 +1,8 @@
-package pack.addressbook;
+package pack.addressbook.tests;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import pack.addressbook.appmanager.ApplicationManager;
 
 public class TestBase {
 
