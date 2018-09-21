@@ -11,12 +11,8 @@ public class GroupHelper {
         this.wd = wd;
     }
 
-    public void returnToGroupPage() {
-        wd.findElement(By.linkText("group page")).click();
-    }
-
-    public void submitGroupCreation() {
-        wd.findElement(By.name("submit")).click();
+    public void initGroupCreation() {
+        wd.findElement(By.name("new")).click();
     }
 
     public void fillGroupForm(GroupData groupData) {
@@ -31,7 +27,14 @@ public class GroupHelper {
         wd.findElement(By.name("group_footer")).sendKeys(groupData.getFooter());
     }
 
-    public void initGroupCreation() {
-        wd.findElement(By.name("new")).click();
+    public void submitGroupCreation() {
+        wd.findElement(By.name("submit")).click();
     }
+
+    public void returnToGroupPage() {
+        wd.findElement(By.linkText("group page")).click();
+    }
+
+
+
 }
